@@ -23,19 +23,16 @@ class employee
     Scanner input = new Scanner(System.in);
      
     public void creat_emp(String name, int age, double salary, String address)
-    {
-        
+    {    
        addemp a = new addemp();
         a.name=name;
-       acc.add(a);
         a.age=age;
-       acc.add(a);
         a.salary=salary;
+        a.address=address; 
        acc.add(a);
-        a.address=address;
-       acc.add(a);
-       System.out.println("The employee ID is\n" + emp_id++);
-    
+       System.out.println("The employee ID is\n" + emp_id);
+       emp_id++; 
+      
     }
     public void delete_emp()
     {
@@ -72,7 +69,7 @@ class employee
     public void display(int id)
     {
        
-      if(id<=emp_id && acc.get(id).name!=null)
+      if(id<=emp_id)
         {
             System.out.println("Name:"+acc.get(id).name);
             System.out.println("Age:"+acc.get(id).age);
