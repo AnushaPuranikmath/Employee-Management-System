@@ -8,6 +8,12 @@ package employeemanagement;
 import static employeemanagement.employee.acc;
 import static employeemanagement.employee.emp_id;
 
+/**
+ * The class display is used to display the details of the employees by specifying their employee ID
+ * @author Anusha
+ * @author Vishwanath
+ */
+
 public class display {
     
      public void display(int id)
